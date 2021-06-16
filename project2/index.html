@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+
+<body>
+
+
+<h2>Flip Coin</h2>
+
+
+<p>This is unbiased coin.</p>
+
+
+<img id="myImage" src="img/Coinht.gif" style="width:300px">
+ 
+
+<button id ="ct" onclick= meFunction();>Toss</button>
+
+
+<script>
+
+function meFunction()
+{
+
+var c;
+
+var floor = Math.floor(Math.random()*2);
+
+if(floor===0){
+    
+
+c= "img/head_coin.jpg";
+
+} else
+{
+   
+ 
+c= "img/tail_coin.jpg";
+    
+
+}
+
+document.getElementById("myImage").src=c;
+
+}
+</script>
+
+
+
+</body>
+
+</html>
